@@ -1,0 +1,30 @@
+{
+  "name": "Hotels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StacieRFox/Hotels.git"
+  },
+  "author": "Stacie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StacieRFox/Hotels/issues"
+  },
+  "homepage": "https://github.com/StacieRFox/Hotels#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
