@@ -169,182 +169,73 @@
     </nav>
   </div>
   <div class="content">
-    <div class="content-promo">
+    <section class="content-inverse content-breadcrumb">
       <div class="container">
-        <div class="slideshow-container">
-          <div class="slide fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="img/slide/slide1.jpg">
-            <div class="text">Caption Text</div>
+        <div class="row row-between">
+          <div class="hotel-title row">
+            <a href="index.html" class="link">
+              <i class="fas fa-chevron-left"></i>
+              Back to home
+            </a>
+            <h1 class="link">Hotel title</h1>
+            <span class="badge badge-green">4.3</span>
           </div>
-          <div class="slide fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="img/slide/slide2.jpg">
-            <div class="text">Caption Two</div>
+          <div class="hotel-country">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="" class="link">All countries</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="link">Russia</a>
+                </li>
+              </ol>
+            </nav>
           </div>
-          <div class="slide fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="img/slide/slide3.jpg">
-            <div class="text">Caption Two</div>
-          </div>
-          <div class="slide fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="img/slide/slide4.jpg">
-            <div class="text">Caption Two</div>
-          </div>
-          <div class="slide fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="img/slide/slide5.jpg">
-            <div class="text">Caption Two</div>
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
         </div>
       </div>
-    </div>
-    <div class="content-head content-top-border">
-      <div class="container container-head">
-        <a href="" class="link">
-          <i class="fas fa-star"></i> Interesting offers
-        </a>
-        <div class="btn-group">
-          <button class="btn btn-default">Popular</button>
-          <button class="btn btn-default active">Trending</button>
-          <button class="btn btn-default">New</button>
-        </div>
-        <div class="selectors">
-          <select name="categories">
-            <option disabled selected value="">
-              Categories
-            </option>
-            <option disabled selected value="">
-              Categories
-            </option>
-          </select>
-          <select name="date">
-            <option disabled selected value="">Date</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="content-products content-top-border">
+    </section>
+    <section class="content-info">
       <div class="container">
-        <div class="product-list">
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel1.jpg">
-              <span class="product-title">Paris</span>
-            </div>
-            <div class="product-footer">
-              $ 42.5/day
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel2.jpg">
-              <span class="product-title"> Myrtle Beach</span>
-            </div>
-            <div class="product-footer">
-              $ 43.5/day
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel3.jpg">
-              <span class="product-title">Dubai</span>
-            </div>
-            <div class="product-footer">
-              $ 88.5/day
+        <div class="row row-around row-align-stretch">
+          <img src="img/hotels/hotel7.jpg" width="50%">
+          <div class="content-inverse" style="padding:1rem" >
+            <div class="row row-around row-align-stretch">
+              <div class="column">
+                <strong>Preorder room</strong>
+                <select name="type">
+                  <option disabled selected value="">
+                    Select room
+                  </option>
+                  <option value="">
+                    For 2 people
+                  </option>
+                  <option value="">
+                    For 3 people
+                  </option>
+                </select>
+                <br>
+                <strong>Description</strong>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Dolores maiores deleniti a. Perferendis!</li>
+                  <li>Quo dolore quasi eos? Molestias?</li>
+                  <li>Eius voluptates commodi voluptatem esse.</li>
+                  <li>Ratione incidunt rerum iusto et!</li>
+                </ul>
+              </div>
+              <div class="column">
+                  <h1 style="font-size: 32px">1300 $</h1>
+                  <button class="btn btn-default btn-large">Buy</button>
+              </div>
             </div>
           </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel4.jpg">
-              <span class="product-title">Thailand</span>
-            </div>
-            <div class="product-footer">
-              $ 63.5/day
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel5.jpg">
-              <span class="product-title">Egypt</span>
-            </div>
-            <div class="product-footer">
-              $ 35/day
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel6.jpg">
-              <span class="product-title">Vietnam</span>
-            </div>
-            <div class="product-footer">
-              $ 43.5/day
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel7.jpg">
-              <span class="product-title">Turkey</span>
-            </div>
-            <div class="product-footer">
-              $ 28.5/day
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel8.jpg">
-              <span class="product-title">Dominicana</span>
-            </div>
-            <div class="product-footer">
-              $ 51.5/day
-            </div>
-          </div>
-        </div>
-        <div class="button-wrapper">
-          <button class="btn btn-default">
-            Show more
-          </button>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="content-comments">
+      <div class="container"></div>
+    </section>
   </div>
   <div class="footer">
     <div class="footer-links">
