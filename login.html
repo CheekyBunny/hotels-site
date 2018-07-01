@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>L&R</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel='stylesheet' href='dist/style.css'>
+</head>
+
+<body background="img/back.jpg">
+  <div class="content register">
+    <div class="container">
+      <header>
+        <h1>
+          <a href="#">
+            <img src="http://tfgms.com/sandbox/dailyui/logo-1.png" alt="Authentic Collection">
+          </a>
+        </h1>
+      </header>
+      <h1 class="text-center">Login</h1>
+      <form class="registration-form">
+        <label>
+          <span class="label-text">Email</span>
+          <input type="text" name="email">
+        </label>
+        <label class="password">
+          <span class="label-text">Password</span>
+          <button class="toggle-visibility" title="toggle password visibility" tabindex="-1">
+            <span class="glyphicon glyphicon-eye-close"></span>
+          </button>
+          <input type="password" name="password">
+        </label>
+        <div class="text-center">
+          <a href="index.html" class="submit">Back to home</a>
+          <button class="submit" name="register">Sign Me IN</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="dist/bundle.js"></script>
+  <script type="text/javascript" src="src/js/slideshow.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>
+    var slider = document.getElementById("priceSlider");
+    var output = document.getElementById("sliderValue");
+    output.innerHTML = slider.value; // Display the default slider value
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }</script>
+</body>
+
+</html>

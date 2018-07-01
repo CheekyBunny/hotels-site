@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
 .header-menu {
   display: flex;
   color: #066E4B !important;
@@ -12,7 +13,8 @@ body {
   font-size: 13px;
   line-height: 20px;
   margin: 0;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  zoom: 1.5; }
 
 .header-link,
 .link {
@@ -115,6 +117,7 @@ body {
 
 .input,
 input,
+textarea,
 select {
   font-family: 'Roboto', sans-serif;
   padding: 6px 15px;
@@ -340,17 +343,28 @@ select {
       flex-direction: column;
       text-align: center;
       border: 2px solid #ddd;
+      position: relative;
       border-radius: 10px; }
       .content .content-products .product-list .product .product-head {
         border-bottom: 2px solid #ddd; }
       .content .content-products .product-list .product .product-body {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        z-index: 999; }
         .content .content-products .product-list .product .product-body img {
           height: 300px;
           margin: 10px; }
       .content .content-products .product-list .product .product-footer {
         border-top: 2px solid #ddd; }
+      .content .content-products .product-list .product:before {
+        position: static;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-size: cover;
+        content: '';
+        -webkit-filter: blur(10px);
+        filter: blur(10px); }
 
 .btn {
   font-size: 20px;
@@ -360,7 +374,8 @@ select {
   border-radius: 32px;
   padding: 6px 15px;
   /* outline отвечает за рамку при выделении синюю такую */
-  outline: none; }
+  outline: none;
+  text-decoration: none; }
   .btn .btn-large {
     padding: 12px 20px; }
 
@@ -374,6 +389,18 @@ select {
     /* через класс обычный */
     background-color: #e8e8e8;
     border-color: silver; }
+
+.btn-green {
+  background-color: white;
+  color: #B2B2B2; }
+  .btn-green:hover {
+    background-color: #f4f4f4;
+    border-color: #0cb47c; }
+  .btn-green:active, .btn-green.active {
+    /* через класс обычный */
+    background-color: #0cb47c;
+    border-color: #066E4B;
+    color: #f5f5f5; }
 
 .btn-group {
   display: inline-flex; }
@@ -434,6 +461,47 @@ select {
 ul {
   padding-left: 1rem; }
 
+.product {
+  width: 240px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  margin: 15px; }
+  .product .product-head {
+    color: #808080;
+    padding: 13px 20px;
+    border-bottom: 2px solid #f5f5f5;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center; }
+  .product .product-body {
+    height: auto;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px; }
+    .product .product-body img.product-img {
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+      width: 400px;
+      height: 200px; }
+    .product .product-body .product-title {
+      font-size: 14px;
+      line-height: 25px;
+      color: #808080;
+      font-weight: 400; }
+  .product .product-footer {
+    border-top: 2px solid #f5f5f5;
+    font-size: 16px;
+    line-height: 30px;
+    font-style: bold;
+    text-align: center;
+    padding: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; }
+
 .footer {
   padding: 20px;
   border-top: 2px solid #999999;
@@ -465,4 +533,210 @@ ul {
   justify-content: space-around; }
   .footer-link * {
     margin: 0 1rem; }
+
+.register * {
+  box-sizing: border-box;
+  font-size: 1em;
+  margin: 0;
+  padding: 0; }
+
+.register .container {
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em 0 rgba(51, 51, 51, 0.25);
+  display: block;
+  max-width: 480px;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 98%; }
+
+.register .container:before {
+  content: '';
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100vw; }
+
+.register .container:after {
+  background: rgba(255, 255, 255, 0.6);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%; }
+
+.register form button.submit,
+.register form a.submit {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #333;
+  line-height: 1em;
+  padding: 0.5em 0.5em;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold; }
+
+.register form button:hover,
+.register form button:focus,
+.register form button:active,
+.register form button.loading {
+  background: #333;
+  color: #fff;
+  outline: none; }
+
+.register form button.success {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: #fff; }
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.register form button span.loading-spinner {
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 0.5s linear infinite;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1em;
+  width: 1em; }
+
+.register form label {
+  border-bottom: 1px solid #333;
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.register form label.col-one-half {
+  float: left;
+  width: 50%; }
+
+.register form label.col-one-half:nth-of-type(even) {
+  border-left: 1px solid #333;
+  padding-left: 0.25em; }
+
+.register form label input {
+  background: none;
+  border: none;
+  line-height: 1em;
+  font-weight: 300;
+  padding: 0.125em 0.25em;
+  width: 100%; }
+
+.register form label input:focus {
+  outline: none; }
+
+.register form label input:-webkit-autofill {
+  background-color: transparent !important; }
+
+.register form label span.label-text {
+  display: block;
+  font-size: 0.5em;
+  font-weight: bold;
+  padding-left: 0.5em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.register form label.checkbox {
+  border-bottom: 0;
+  text-align: center; }
+
+.register form label.checkbox input {
+  display: none; }
+
+.register form label.checkbox span {
+  font-size: 0.5em; }
+
+.register form label.checkbox span:before {
+  content: '\E157';
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-size: 1.125em;
+  padding-right: 0.25em;
+  position: relative;
+  top: 1px; }
+
+.register form label.checkbox input:checked + span:before {
+  content: '\E067'; }
+
+.register form label.invalid {
+  border-color: #c0392b !important; }
+
+.register form label.invalid span.label-text {
+  color: #c0392b; }
+
+.register form label.password {
+  position: relative; }
+
+.register form label.password button.toggle-visibility {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75em;
+  line-height: 1em;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.register form label.password button.toggle-visibility:hover,
+.register form label.password button.toggle-visibility:focus,
+.register form label.password button.toggle-visibility:active {
+  color: #000;
+  outline: none; }
+
+.register form label.password button.toggle-visibility span {
+  vertical-align: middle; }
+
+.register h1 {
+  font-size: 3em;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+  font-family: 'Cookie', cursive; }
+
+.register h1 img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 240px;
+  width: 100%; }
+
+.register html {
+  font-size: 18px;
+  height: 100%; }
+
+.register .text-center {
+  text-align: center; }
 
