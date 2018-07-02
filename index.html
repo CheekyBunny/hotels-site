@@ -27,57 +27,15 @@
         <img src="img/Logo.png" class="header-log">
       </div>
       <div class="header-links">
-        <a href="" class="header-link">
+        <a href="index.html" class="header-link">
           <i class="fas fa-home"></i>Home
         </a>
-        <a href="login.html" class="btn btn-default">
+        <a href="login.html" class="btn btn-green ">
           Sign IN
         </a>
-        <a href="register.html" class="btn btn-default">
+        <a href="register.html" class="btn btn-green">
           Sign UP
         </a>
-        <!--<div class="dropdown">
-          <img src="img/111.jpg" class="header-avatar">
-          <div class="dropdown-content">
-            <ul>
-              <li class="dropdown-item">
-                <form class="form-horizontal" role="form">
-                  <div class="card col-lg-6 col-lg-offset-3 col-xs-12 col-sm-8 col-sm-offset-2">
-                    <div class="card-header">Вход в систему</div>
-                    <div class="card-body">
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">
-                          Логин</label>
-                        <div class="col-sm-9">
-                          <input type="email" class="form-control" name="username" placeholder="Login">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-3 control-label">
-                          Пароль</label>
-                        <div class="col-sm-9">
-                          <input type="password" class="form-control" name="password" placeholder="Password">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-9">
-                          <div class="checkbox">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-footer">
-                      <div class="col-sm-offset-3">
-                        <button type="submit" class="btn btn-success">
-                          Войти</button>
-                        <button type="reset" class="btn btn-default">
-                          Отмена</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-          </div>
-        </div>-->
         <div class="dropdown">
           <img src="img/111.jpg" class="header-avatar">
           <div class="dropdown-content">
@@ -85,12 +43,17 @@
               <li class="dropdown-item">
                 <a href="">
                   <i class="far fa-plus-square"></i>
-                  <a href="" class="dropdown-item ">Добавить запись </a>
+                  <a href="createarticle.html" class="dropdown-item ">Add a note </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="">
+                  <i class="fas fa-pencil-alt"></i>
+                  <a href="editarticle.html" class="dropdown-item ">Edit a note </a>
               </li>
               <li class="dropdown-item">
                 <a href="">
                   <i class="fas fa-sign-out-alt"></i>
-                  <a href="" class="dropdown-item ">Выход</a>
+                  <a href="" class="dropdown-item ">Exit</a>
               </li>
             </ul>
           </div>
@@ -102,17 +65,22 @@
               <li class="dropdown-item">
                 <a href="">
                   <i class="far fa-plus-square"></i>
-                  <a href="" class="dropdown-item ">Добавить запись </a>
+                  <a href="createarticle.html" class="dropdown-item ">Add a note </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="">
+                  <i class="fas fa-pencil-alt"></i>
+                  <a href="editarticle.html" class="dropdown-item ">Edit a note </a>
               </li>
               <li class="dropdown-item">
                 <a href="">
                   <i class="fas fa-clipboard-check"></i>
-                  <a href="" class="dropdown-item ">Подтвержение статей</a>
+                  <a href="" class="dropdown-item ">Confirmation of articles</a>
               </li>
               <li class="dropdown-item">
                 <a href="">
                   <i class="fas fa-sign-out-alt"></i>
-                  <a href="" class="dropdown-item ">Выход</a>
+                  <a href="" class="dropdown-item ">Exit</a>
               </li>
             </ul>
           </div>
@@ -123,12 +91,18 @@
             <li class="dropdown-item">
               <a href="">
                 <i class="far fa-plus-square"></i>
-                <a href="" class="dropdown-item ">Добавить запись </a>
+                <a href="createarticle.html" class="dropdown-item ">Add a note </a>
+            </li>
+            <li class="dropdown-item">
+              <a href="">
+                <i class="fas fa-pencil-alt"></i>
+                <a href="editarticle.html" class="dropdown-item ">
+                  Edit a note </a>
             </li>
             <li class="dropdown-item">
               <a href="">
                 <i class="fas fa-clipboard-check"></i>
-                 <a href="" class="dropdown-item ">Подтвержение статей</a>
+                <a href="" class="dropdown-item ">Confirmation of articles</a>
             </li>
             <li class="dropdown-item">
               <a href="">
@@ -139,43 +113,13 @@
             <li class="dropdown-item">
               <a href="">
                 <i class="fas fa-sign-out-alt"></i>
-                <a href="" class="dropdown-item ">Выход</a>
+                <a href="" class="dropdown-item ">Exit</a>
             </li>
           </div>
         </div>
       </div>
     </div>
     <nav class="header-menu">
-      <div class="slider-container">
-        <span class="header-link">Price</span>
-        <input type="range" min="100" max="5000" value="500" class="slider" id="priceSlider">
-        <span class="header-link" id="sliderValue">500</span>
-      </div>
-      <div class="hotel-categories">
-        <select>
-          <option disabled value="">Select class</option>
-          <option>5 ★★★★★</option>
-          <option>4 ★★★★</option>
-          <option>3 ★★★</option>
-          <option>2 ★★</option>
-          <option>0-1 ★</option>
-        </select>
-      </div>
-      <div class="hotel-options">
-        <div class="checkbox">
-          <input type="checkbox">
-          <label class="header-link">With breakfast</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">
-          <label class="header-link">Parking</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">
-          <label class="header-link">Restaurant</label>
-        </div>
-      </div>
-      <button class="btn btn-primary">Let's find!</button>
     </nav>
   </div>
   <div class="content">
@@ -183,29 +127,24 @@
       <div class="container">
         <div class="slideshow-container">
           <div class="slide fade">
-            <div class="numbertext">1 / 5</div>
             <img src="img/slide/slide1.jpg">
-            <div class="text">Caption Text</div>
+            <div class="text">Hot 5</div>
           </div>
           <div class="slide fade">
-            <div class="numbertext">2 / 5</div>
             <img src="img/slide/slide2.jpg">
-            <div class="text">Caption Two</div>
+            <div class="text">Hot 5</div>
           </div>
           <div class="slide fade">
-            <div class="numbertext">3 / 5</div>
             <img src="img/slide/slide3.jpg">
-            <div class="text">Caption Two</div>
+            <div class="text">Hot 5</div>
           </div>
           <div class="slide fade">
-            <div class="numbertext">4 / 5</div>
             <img src="img/slide/slide4.jpg">
-            <div class="text">Caption Two</div>
+            <div class="text">Hot 5</div>
           </div>
           <div class="slide fade">
-            <div class="numbertext">5 / 5</div>
             <img src="img/slide/slide5.jpg">
-            <div class="text">Caption Two</div>
+            <div class="text">Hot 5</div>
           </div>
           <!-- Next and previous buttons -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -225,14 +164,9 @@
     </div>
     <div class="content-head content-top-border">
       <div class="container container-head">
-        <a href="" class="link">
-          <i class="fas fa-star"></i> Interesting offers
+        <a href="listotels.html" class="link">
+          <i class="fas fa-star"></i> List of hotels
         </a>
-        <div class="btn-group">
-          <button class="btn btn-default">Popular</button>
-          <button class="btn btn-default active">Trending</button>
-          <button class="btn btn-default">New</button>
-        </div>
         <div class="selectors">
           <select name="categories">
             <option disabled selected value="">
@@ -248,151 +182,35 @@
         </div>
       </div>
     </div>
-    <div class="content-products content-top-border">
-      <div class="container">
-        <div class="product-list">
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel1.jpg">
-              <span class="product-title">Paris</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 42.5/day</span>
-              <span>5 ⭐</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel2.jpg">
-              <span class="product-title"> Myrtle Beach</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 43.5/day</span>
-              <span>5 ⭐</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel3.jpg">
-              <span class="product-title">Dubai</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 88.5/day</span>
-              <span>4.5 ⭐</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel4.jpg">
-              <span class="product-title">Thailand</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 63.5/day</span>
-              <span>5 ⭐</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel5.jpg">
-              <span class="product-title">Egypt</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 35/day</span>
-              <span>5 ⭐</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel6.jpg">
-              <span class="product-title">Vietnam</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 43.5/day</span>
-              <span>5 ⭐</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel7.jpg">
-              <span class="product-title">Turkey</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 27.5/day</span>
-              <span>5 ⭐</span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-head">
-              <a href="hotel.html" class="link">Hotel 1</a>
-            </div>
-            <div class="product-body">
-              <img class="product-img" src="img/hotels/hotel8.jpg">
-              <span class="product-title">Dominicana</span>
-            </div>
-            <div class="product-footer">
-              <span>$ 51.5/day</span>
-              <span>5 ⭐</span>
-            </div>
-          </div>
+    <div class="footer">
+      <div class="footer-links">
+        <div class="footer-link">
+          <span> © All rights reserved</span>
         </div>
-        <div class="button-wrapper">
-          <button class="btn btn-green">
-            Show more
-          </button>
+        <div class="footer-link">
+          <span>Support</span>
+          <a href "" class="link">luxr@gmail.com</a>
+          <a href=”http://vk.com/″ target=”_blank” rel=”nofollow” class="link">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href=”http://twitter.com/″ target=”_blank” rel=”nofollow” class="link">
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="footer-links">
-      <div class="footer-link">
-        <span> © Все права защищены</span>
-      </div>
-      <div class="footer-link">
-        <span>Поддержка</span>
-        <a href "" class="link">luxr@gmail.com</a>
-        <a href=”http://vk.com/″ target=”_blank” rel=”nofollow” class="link">
-          <i class="fab fa-vk"></i>
-        </a>
-        <a href=”http://twitter.com/″ target=”_blank” rel=”nofollow” class="link">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="dist/bundle.js"></script>
-  <script type="text/javascript" src="src/js/slideshow.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script>
-    var slider = document.getElementById("priceSlider");
-    var output = document.getElementById("sliderValue");
-    output.innerHTML = slider.value; // Display the default slider value
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <script type="text/javascript" src="src/js/slideshow.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+      var slider = document.getElementById("priceSlider");
+      var output = document.getElementById("sliderValue");
+      output.innerHTML = slider.value; // Display the default slider value
 
-    // Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function () {
-      output.innerHTML = this.value;
-    }</script>
+      // Update the current slider value (each time you drag the slider handle)
+      slider.oninput = function () {
+        output.innerHTML = this.value;
+      }</script>
 </body>
 
 </html>

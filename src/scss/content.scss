@@ -122,12 +122,12 @@ $green:#066E4B;
     color: #B2B2B2;
     &:hover{
         background-color: rgb(244,244,244);
-        border-color:rgb(12, 180, 124);
+        border-color:rgb(18, 83, 62);
     }
     &:active, /* поддержка через псевдокласс */
     &.active{ /* через класс обычный */
-        background-color: rgb(12, 180, 124);
-        border-color: #066E4B;
+        background-color: rgb(18, 83, 62);
+        border-color: rgb(18, 83, 62);
         color: #f5f5f5
     }
 }
